@@ -27,12 +27,10 @@ namespace RedditDailyProgrammer.Common
                 origin = new Point(0, 0);
             }
 
-            var a = new Point(p1.X - origin.X, p1.Y - origin.Y);
-            var b = new Point(p2.X - origin.X, p2.Y - origin.Y);
+            var a = p1.TranslateTo(origin);
+            var b = p2.TranslateTo(origin);
 
-            var aDotb = a.X*b.X + a.Y*b.Y;
-            var bDotb = b.X*b.X + b.Y*b.Y;
-            return aDotb/(double)bDotb;
+            return a.DotProduct(b)/(double)b.DotProduct(b);
         }
     }
 }

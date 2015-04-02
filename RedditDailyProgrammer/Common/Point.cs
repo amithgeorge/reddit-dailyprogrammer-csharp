@@ -13,6 +13,16 @@ namespace RedditDailyProgrammer.Common
             Y = y;
         }
 
+        public Point TranslateTo(Point origin)
+        {
+            return new Point(X - origin.X, Y - origin.Y);
+        }
+
+        public int DotProduct(Point other)
+        {
+            return X*other.X + Y*other.Y;
+        }
+
         private sealed class CoordsEqualityComparer : IEqualityComparer<Point>
         {
             public bool Equals(Point x, Point y)
