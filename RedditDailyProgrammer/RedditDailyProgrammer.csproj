@@ -69,9 +69,12 @@
     <Compile Include="Answers\_207Bonus\207BonusTests.cs" />
     <Compile Include="Answers\_208Medium\208Medium.cs" />
     <Compile Include="Answers\_208Medium\208MediumTests.cs" />
+    <Compile Include="Common\Point.cs" />
+    <Compile Include="Common\MathHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Answers\_208Medium\README.markdown" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
